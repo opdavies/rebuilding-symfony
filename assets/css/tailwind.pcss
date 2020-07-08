@@ -1,0 +1,29 @@
+@tailwind base;
+
+a:hover,
+a:focus {
+    @apply underline
+}
+
+@tailwind components;
+
+.nav-item {
+    @apply flex text-gray-200 text-xs;
+
+    @screen lg {
+        @apply text-sm
+    }
+}
+
+@tailwind utilities;
+
+.filter-contrast-1 {
+    filter: contrast(1%)
+}
+.filter-invert-100 {
+    filter: invert(100%)
+}
+
+.with-arrow:after {
+    content: "\A0\2192"
+}

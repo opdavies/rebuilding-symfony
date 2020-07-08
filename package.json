@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@symfony/webpack-encore": "^0.30.2",
+    "postcss-nested": "^4.2.2",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "postcss-loader": "^3.0.0"
+  }
+}
