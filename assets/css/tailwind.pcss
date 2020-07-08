@@ -8,20 +8,26 @@ a:focus {
 @tailwind components;
 
 .nav-item {
-    @apply flex text-gray-200 text-xs;
+    @apply flex text-gray-900 text-xs;
 
     @screen lg {
         @apply text-sm
+    }
+
+    @screen dark {
+        @apply text-gray-200
     }
 }
 
 @tailwind utilities;
 
-.filter-contrast-1 {
-    filter: contrast(1%)
-}
-.filter-invert-100 {
-    filter: invert(100%)
+@variants responsive {
+    .filter-contrast-1 {
+        filter: contrast(1%)
+    }
+    .filter-invert-100 {
+        filter: invert(100%)
+    }
 }
 
 .with-arrow:after {

@@ -7,6 +7,8 @@ module.exports = {
         500: "#42a7ff",
       },
       gray: {
+        50: "#f9f9f9",
+        100: "#f5f5f5",
         200: "#aaa",
         700: "#36393e",
         750: "#2e3136",
@@ -22,7 +24,11 @@ module.exports = {
       serif: ["Lucida Grande"],
       georgia: ["Georgia"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        dark: { raw: "(prefers-color-scheme: dark)" },
+      },
+    },
   },
   variants: {
     borderWidth: ["responsive", "hover", "focus"],
