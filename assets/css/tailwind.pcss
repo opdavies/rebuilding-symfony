@@ -1,35 +1,40 @@
 @tailwind base;
 
+a {
+  @apply text-red-800 text-lg
+}
+
 a:hover,
 a:focus {
-    @apply underline
+  @apply underline
 }
 
 @tailwind components;
 
 .nav-item {
-    @apply flex text-gray-900 text-xs;
+  @apply flex text-gray-900 text-xs;
 
-    @screen lg {
-        @apply text-sm
-    }
+  @screen lg {
+    @apply text-sm
+  }
 
-    @screen dark {
-        @apply text-gray-200
-    }
+  @screen dark {
+    @apply text-gray-200
+  }
 }
 
 @tailwind utilities;
 
-@variants responsive {
-    .filter-contrast-1 {
-        filter: contrast(1%)
-    }
-    .filter-invert-100 {
-        filter: invert(100%)
-    }
+@responsive {
+  .filter-contrast-1 {
+    filter: contrast(1%)
+  }
+
+  .filter-invert-100 {
+    filter: invert(100%)
+  }
 }
 
 .with-arrow:after {
-    content: "\A0\2192"
+  content: "\A0\2192"
 }
